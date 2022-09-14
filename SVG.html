@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="svg-styles.css" />
+    <script src="JavaScript1.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="uic1.svg.png">
+        <label class="logo">Sairam Buddhavarapu</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visualization.html">Visualization</a></li>
+            <li><a href="SVG.html">SVG</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    <section class="About">
+        <div class="main">
+            <div class="About-text">
+                <h3>SVG Visualizer</h3><br />
+                
+            </div>
+        </div>
+        <div class="shapes">
+            <svg class="rect" id="rectangle" >
+                <rect width="200" height="200" fill="blue">
+                    <animate attributeName="x" from="0" to="100%" dur="3s" fill="freeze" repeatCount="indefinite"></animate>
+                </rect>
+            </svg>
+            <svg class="star" id="star" height="400" width="500" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="200,110 140,280 290,160 110,160 260,280" fill="yellow">
+                    <animateTransform 
+                    attributeName="transform" attributeType="XML" type="rotate" from="110 160 170" to="460 160 170" dur="10s" repeatCount="indefinite">
+                    </animateTransform>
+                </polygon>
+             </svg>
+            <svg class="circle" id="circle" width="500" >
+                <circle cx="60" cy="60" r="30" fill="white">
+                    <animate attributeName="cx" begin="0s" dur="3s" to="100%" fill="freeze" repeatCount="indefinite"></animate>
+                    <animate attributeName="r" begin="0s" dur="3s" to="60" fill="freeze" repeatCount="indefinite"></animate>
+                </circle>
+            </svg>
+            
+
+        </div>
+    </section>
+    <script src="/SVG.js"></script>
+</body>
+
+</html>
