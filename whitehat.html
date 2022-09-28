@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slate Gun Deaths</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+</head>
+<body>
+    <nav>
+        <img src="uic1.svg.png">
+        <label class="logo">White Hat</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visualization.html">Visualization</a></li>
+            <li><a href="SVG.html">SVG</a></li>
+            <li><a href="/blackhat.html">Black Hat</a></li>
+            <li><a href="/whitehat.html">White Hat</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="container full-height">
+        <h10>Click on the state to expand. Click once more on the state to update Info. Double click to zoom out.</h10>
+        <section id="viz">
+        <div class="row center-items margin-top">
+            <div class="col-12 full-width center-container">
+                <div id="tooltip-container"></div>
+                <div class="viz full-width center-container"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 label-div">
+                <h1 class="font_0">Gun Death Victims: <span class="location-text">United States</span></h1>
+                <!-- <p class="font_4">(December 2012 - December 2013)</p> -->
+                <h3 class="font_5">Total No. of Deaths: <span class="death-count">12070</span></h3>
+                <h5 class="font_4"><span >Male</span> Deaths: <span id="male-total">10153</span> <br><span id="male-child">155</span> - Children<br> <span id="male-teen">503</span> - Adoloscents<br> <span id="male-adult">9310</span> - Adults </h5>
+                <h5 class="font_4"><span >Female</span> Deaths: <span id="female-total">1850</span> <br> <span id="female-child">77</span> - Children<br> <span id="female-teen">69</span> - Adoloscents<br> <span id="female-adult">1676</span> - Adults </h5>
+            </div>
+        </div>
+        </section>
+        <section>
+        <div class="row center-items full-height margin-top">
+            <div class="col-12 full-width center-container full-height margin-left">
+                    <h1 class="font_0">Description: </h1>
+                    <ol class="font_5 margin-left">
+                        <li>The visual is currently in a version in which the states are color-coded based on the number of gun deaths and displayed in a geographic format. 
+                            Hovering over a state displays the name of the state as well as the amount of fatalities. 
+                            The deeper the color, the greater the number of deaths held in the respective states. When we click on a state, the visual expands to display only that state, and another click provides crucial demographics of fatalities in that state based on gender and age category. 
+                            A double click also returns you to the original geographic map. </li>
+                    </ol>
+            </div>
+        </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script type="text/javascript" src="whitehat.js"></script>
+</body>
+</html>

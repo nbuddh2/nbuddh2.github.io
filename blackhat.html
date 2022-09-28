@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slate Gun Deaths</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+</head>
+<body>
+    <nav>
+        <img src="uic1.svg.png">
+        <label class="logo">Black Hat</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visualization.html">Visualization</a></li>
+            <li><a href="SVG.html">SVG</a></li>
+            <li><a href="/blackhat.html">Black Hat</a></li>
+            <li><a href="/whitehat.html">White Hat</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="container full-height">
+        <h1>Carrying cash is risky! Move your money to banks</h1>
+        <section id="viz">
+        <div class="row center-items margin-top">
+            <div class="col-12 full-width center-container">
+                <div id="tooltip-container"></div>
+                <div class="viz full-width center-container"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 label-div">
+                <h1 class="font_0">Robberies: <span class="location-text">USA</span></h1>
+                <!-- <p class="font_4">(December 2012 - December 2013)</p> -->
+                <h3 class="font_5">Total No. of Robberies: <span class="death-count">12070</span></h3>
+                <h5 class="font_4"><span>Roberies in other States :</span>  <span id="others">1850</span> </h5>
+                <h5 class="font_4"><span>Robberies in big States :</span>  <span id="others">10153</span> </h5>
+            </div>
+        </div>
+        </section>
+        <section>
+        <div class="row center-items full-height margin-top">
+            <div class="col-12 full-width center-container full-height margin-left">
+                <h1 class="font_0">Description: </h1>
+                <p class="font_5">Black hat warning by hackers!!!!</p>
+                <ol class="font_5 margin-left">
+                    <li>The presented graphic is a bogus warning issued by black hat hackers. They have targeted the most well-known states in the United States. The described thefts are fictitious because the hackers planned to break into the bank accounts by hacking the major banks in the United States.  
+                    The deeper the color, the greater the number of robberies held in the respective states. Hover over the states to see how many robberies have occurred in each one.</li>
+                </ol>
+            </div>
+        </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script type="text/javascript" src="blackhat.js"></script>
+</body>
+</html>
