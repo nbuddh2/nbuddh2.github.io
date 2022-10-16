@@ -100,3 +100,16 @@ btn {
     list-style: none;
     box-sizing: border-box;
     }
+
+#scene { width: 90%; height: 90%}
+
+#scatterPlot { width: 100%; height: 100%}
+
+/* SVG styling */
+svg {
+    font-family: helvetica, sans-serif;
+}
+
+path, line {
+    stroke: #777;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <link rel="stylesheet" type="text/css" href="svg-styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+   
+</head>
+<body onload="App.start();">
+    <nav>
+        <img src="uic1.svg.png" height=100%>
+        <label class="logo">3D Visualization</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="visualization.html">Visualization</a></li>
+            <li><a href="SVG.html">SVG</a></li>
+            <li><a href="/blackhat.html">Black Hat</a></li>
+            <li><a href="/whitehat.html">White Hat</a></li>
+            <li><a href="hw3.html">3D Vis</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            
+        </ul>
+    </nav>
+    <div class="main" padding="0px"> 
+        <h2>Point Cloud and Scatter Plot</h2> 
+    </div>
+    <div class="main">
+        <div class="row" id="scatterPlot">
+            
+            <div class="particleDiv col-md-6">
+                <div id="scene"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main"> 
+        <ul class="About-text">
+            <p><b>Operations :</b></p>
+            <p>Pressing the 'up','down','left and right' keys, move the cylinder.</p>
+            <p>Utilizing the cursor, rotate and zoom the point cloud cylinder.</p>
+            <p>To show crossing points with a point cloud on a scatter plot, move the plane with the 'a' (right) and 'd' (left) keys.</p>
+            <p>Brushing on the scatter plot will be seen by drawing a rectangle around the spots you want to choose.</p><br/>
+           
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="lib/js/three.min.js"></script>
+    <script src="lib/js/orbit-controls.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.6/d3.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="scene.js"></script>
+    <script src="particleSystem.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
